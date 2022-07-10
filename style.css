@@ -1,0 +1,221 @@
+/******************************* style resets *******************************/
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+}
+
+a:link,a:visited {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    /* some css */
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+/******************************* header styles *******************************/
+.header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)) ,url('images/donation0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.btn_red{
+    background-color: #FF5959;
+    color: #fff;
+}
+
+/******************************* donate styles *******************************/
+.donate_today,.donate_plan {
+    padding: 5rem 0;
+}
+
+.heading {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.donate_amount {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    margin-bottom: 5rem;
+}
+
+.donate_amount li {
+    color: #313131;
+    
+    padding: 4rem;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.donate_amount li.active {
+    color: #FF5959;
+
+    padding: 4rem;
+    border: 2px solid #FF5959;
+    border-radius: 10px;
+    background-color: rgba(255, 89, 89, 0.2);
+}
+
+.donate_form {
+    margin-bottom: 5rem;
+
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate_form input{width: 50%;
+outline: none;
+border: none;
+border-bottom: 2px solid #eee;
+padding: 20px;
+text-align: center;}
+
+.donate_form input::placeholder {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cards, .img_cards{
+    display: flex;
+    gap: 4rem;
+    margin: 4rem;
+}
+
+.card{
+    background-color: #eee;
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.card_img, .card_title{
+    margin-bottom: 2rem;
+}
+
+.img_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.img_card {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.info > * {
+    margin-bottom: 4rem;
+}
+
+/******************************* update styles *******************************/
+.updates {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem;
+}
+
+.update_form {
+    background-color: beige;
+    padding: 4rem 20rem;
+}
+
+.update_form input {
+    padding: 1rem 4rem;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    outline: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 30);
+
+    padding: 4rem 0;
+}
+
+.footer .heading {
+    color: #FF5959;
+}
+
+.footer p {
+    color: #fff;
+}
